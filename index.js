@@ -23,10 +23,20 @@ function followed (data) {
 
 // callback function to DM wallet info to new user when messaged
 function message (data) {
+  let name = data.source.name
+  let screenName = data.source.screen_name
+  
+  // DM user
 
+  console.log('Messaged by: ' + name + ' @' + screenName)
 }
 
 // callbback function to DM wallet info to new user when direct messaged
 function direct_message (data) {
+  let name = data.source.name
+  let screenName = data.source.screen_name
+  
+  // DM User
 
+  console.log('Direct Messaged by: ' + name + ' @' + screenName)
 }
